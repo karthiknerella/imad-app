@@ -10,7 +10,7 @@ app.get('/', function (req, res) {
 });
 
 app.get('/article-one', function (req, res) {
-  res.sendFile(path.join('article 1 is served here'));
+  res.send('article 1 is served here');
 });
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
@@ -20,7 +20,7 @@ app.get('/article-three', function (req, res) {
   res.send('article 3 is served here');
 });
 app.get('/article-two', function (req, res) {
-  res.sendFile('article 2 is served here');
+  res.send('article 2 is served here');
 });
 
 app.get('/ui/madi.png', function (req, res) {
